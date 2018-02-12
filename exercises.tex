@@ -1,0 +1,168 @@
+\chapter{Exercícios}
+
+%
+%\begin{exercicio}
+%  {}
+%  {}
+%\end{exercicio}
+
+
+\section{Introdução}
+\begin{exercicio}
+  {1}
+  {Crie um programa que leia e imprima o seu nome, o seu endereço, e a sua idade. O programa deve imprimir mensagens solicitando que o usuário informe os dados.}
+\end{exercicio}
+
+\begin{exercicio}
+  {2}
+  {Faça um programa que leia dois números inteiros, $a$ e $b$, troque o conteúdo desses números e mostre os novos valores de $a$ e $b$}
+\end{exercicio}
+
+\begin{exercicio}
+  {3}
+  {Crie um programa que leia dois números inteiros, calcule e mostre a média aritmética entre eles.}
+\end{exercicio}
+
+\begin{exercicio}
+  {4}
+  {Faça um programa que calcule o volume de um cilindro circular, dados os raio e altura do mesmo. (Obs: $V = \pi * r^2 * h$, onde $\pi=3.14$, r consiste no raio e h a altura)}
+\end{exercicio}
+
+\begin{exercicio}
+  {5}
+  {Crie um programa que leia três coeficientes de uma equação do segundo grau $y=a*x^2 + b*x + c = 0$ e imprima o valor das raízes. Assumir que o valor do discriminante (delta) sempre será maior ou igual a zero. \\
+  Teste o programa com os seguintes conjuntos: \\
+  \begin{itemize}
+    \item $a = 1, b = -8, c = 15, resp: x_{1} = 5 x_{2} = 3$
+    \item $a = 1, b = -8, c = 0, resp: x_{1} = 8 x_{2} = 0$
+    \item $a = 2, b = -6, c = 4, resp: x_{1} = 2 x_{2} = 1$
+    \item $a = 4, b = 8, c = 3, resp: x_{1} = -0.5 x_{2} = -1.5$
+  \end{itemize}}
+\end{exercicio}
+
+\begin{exercicio}
+  {6}
+  {Crie um programa para imprimir a hipotenusa de um triângulo retângulo, dados os valores dos catetos. Calcula-se a hipotenusa como a raiz quadrada da soma dos quadrados dos catetos. \\
+  Teste o programa com os seguintes conjuntos: \\
+  \begin{itemize}
+    \item $c_{1} = 3 c_{2} = 4, resp: h = 5$
+    \item $c_{1} = 12c _{2} = 9, resp: h = 15$
+  \end{itemize}}
+\end{exercicio}
+
+\begin{exercicio}
+  {7}
+  {Faça um programa que leia as três notas de um aluno, com seus respectivos pesos. Calcule e mostre a média final deste aluno.}
+\end{exercicio}
+
+\section{Estruturas Condicionais}
+\begin{exercicio}
+  {1}
+  {Crie um programa que leia três coeficientes de uma equação do segundo grau $y=a*x^2 + b*x + c = 0$ e imprima o valor das raízes. Calcule as raízes se o valor do discriminante (delta) for maior ou igual a zero. Se for menor que zero, apenas imprima uma mensagem adequada e interrompa o programa. \\
+  Teste o programa com os seguintes conjuntos: \\
+  \begin{itemize}
+    \item $a = 1, b = -8, c = 15, resp: x_{1} = 5 x_{2} = 3$
+    \item $a = 1, b = -8, c = 0, resp: x_{1} = 8 x_{2} = 0$
+    \item $a = 2, b = -6, c = 4, resp: x_{1} = 2 x_{2} = 1$
+    \item $a = 4, b = 8, c = 3, resp: x_{1} = -0.5 x_{2} = -1.5$
+    \item $a = 4, b = 2, c = 1, resp: discriminante menor que zero$
+  \end{itemize}}
+\end{exercicio}
+
+\begin{exercicio}
+  {2}
+  {Dado um número inteiro, permitir ao usuário escolher dentre uma lista (menu) qual operação o mesmo deseja realizar: \\
+  \begin{itemize}
+    \item verificar se o número é par
+    \item verificar se é ímpar
+    \item verificar se é múltiplo de 3
+    \item verificar se é múltiplo de 5
+    \item verificar se é múltiplo de 7
+    \item verificar TODOS os testes
+  \end{itemize}}
+\end{exercicio}
+
+\begin{exercicio}
+  {3}
+  {O Departamento do Meio Ambiente mantém três listas (A, B e C) de indústrias conhecidas por serem altamente poluentes da atmosfera. Os resultados de várias medidas são combinados para formar o que é chamado de "índice de poluição". Isto é controlado regularmente. Normalmente os valores caem entre $0.05$ e $0.25$. Se o índice de poluição atingir $0.25$ a situação é de alerta; se atingir $0.3$, as indústrias da lista A serão chamadas a suspender as operações até que os valores retornem ao normal. Se atingir $0.4$, as indústrias B serão também notificadas. Se exceder $0.5$, as três serão avisadas. \\
+  Escreva um programa para ler o índice de poluição e emitir um relatório notificando as indústrias, caso necessário. Deve constar no relatório a situação ocorrida (abaixo, normal ou alerta). \\
+  Teste o programa com os seguintes conjuntos: \\
+  \begin{itemize}
+    \item $i = 0.26, resp: Alerta$
+    \item $i = 0.03, resp: Abaixo do normal$
+    \item $i = 0.3, resp: Lista A suspensa$
+    \item $i = 0.06, resp: Normal$
+    \item $i = 0.4, resp: Listas A e B suspensas$
+    \item $i = 0.35, resp: Lista A suspensa$
+    \item $i = 0.53, resp: Listas A, B e C suspensas$
+  \end{itemize}}
+\end{exercicio}
+
+\begin{exercicio}
+  {4}
+  {Dado três valores de um suposto triângulo, decidir se esses valores podem ou não ser um triângulo, e cao seja decidir se é um triângulo retângulo ou não. \\
+  Dado que: \\
+  \begin{itemize}
+    \item Para ser triângulo a soma de dois lados sempre tem que ser maior que outro
+    \item Para ser triângulo retângulo o maior lado ao quadrado tem que ser igual a soma dos quadrados dos outros dois
+  \end{itemize}}
+\end{exercicio}
+
+\begin{exercicio}
+  {5}
+  {Dado o ponto de origem (x,y), a altura A e largura L num epsaço bidimensional, podemos definir um retângulo. Receber um ponto (a,b) e decidir se ele esta:
+  \begin{itemize}
+    \item Dentro
+    \item Fora 
+    \item Em alguma das linhas que definem o retângulo
+  \end{itemize}}
+\end{exercicio}
+
+\section{Estruturas de repetição}
+\begin{exercicio}
+  {1}
+  {Imprima o valor de: \\
+  $\sum\limits_{i=1}^{10} i$}
+  
+  Resposta: 55.
+\end{exercicio}
+
+\begin{exercicio}
+  {2}
+  {Imprima o valor de $n!$, sendo $n$ informado pelo usuário. \\
+  Teste para os seguintes casos: \\
+  \begin{itemize}
+    \item $n = 0, resp: 1$
+    \item $n = 1, resp: 1$
+    \item $n = 2, resp: 2$
+    \item $n = 3, resp: 6$
+    \item $n = 5, resp: 120$
+  \end{itemize}}
+\end{exercicio}
+
+\begin{exercicio}
+  {3}
+  {Imprima o valor da soma: \\
+  $\sum\limits_{i=1}^{200} \frac{1}{i}$}
+\end{exercicio}
+
+\begin{exercicio}
+  {4}
+  {Partindo-se de um único casal de coelhos filhotes recém-nascidos, supondo que um casal de coelhos torne-se fértil após dois meses de vida e partir de então, produz um novo casal a cada mês e assumindo-se que os colhes nunca morrem, a quantidade de casais de coelhos após $n$ meses se dá pelo n-ésimo termo da seguinte sequência: \\
+  $F_{n} = F_{n-2} + F_{n-1}, n>=2$ \\
+  $F_{0} = 0  e F_{1} = 1$ \\
+  Esta sequencia se chama \textit{Fibonacci}. Imprima a quantidade de casais de coelhos após $n$ meses, onde $n$ é dado pelo usuário.}
+\end{exercicio}
+
+\begin{exercicio}
+  {5}
+  {Calcule e imprima a média aritmética das idades de um grupo de pessoas fornecidas pelo usuário, cada idade sendo maior que zero. A entrada dos dados é finalizada quando o usuário digitar um valor igual a $0$. \\
+  Teste o programa para $60,20,30,70,45,25,0$.}
+
+  Resposta correta: $41.66$
+\end{exercicio}
+
+\begin{exercicio}
+  {6}
+  {Leia as seguintes informações para um número indeterminado de alunos: matrícula (inteiro), nome (string), e as notas de três provas (reais). A leitura dos dados deve terminar quando o usuário digitar $0$ para a matrícula. Esse último valor não deve ser considerado para o cálculo. Imprima, para cada aluno: matrícula, nome e média ponderada das provas, onde a primeira prova tem peso $2$, a segunda peso $4$ e a terceira peso $4$.}
+\end{exercicio}

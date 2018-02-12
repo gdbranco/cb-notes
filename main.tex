@@ -1,0 +1,68 @@
+%-------------------------------------------------------------------------------
+%	PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[a4paper, 11pt, twoside]{book}
+\usepackage[hmarginratio=3:2]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[brazilian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{subcaption}
+\usepackage{mdframed}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{cb}
+\usepackage{ulem}
+\usepackage[yyyymmdd,hhmmss]{datetime}
+\begin{document}
+	\frontmatter
+	
+	%-----------------------------------------------------------------------------
+	%	TITLE PAGE
+	%-----------------------------------------------------------------------------
+	\begin{titlepage}
+		% No style in cover
+		\thispagestyle{empty}
+		% Centraling content in page
+		\newgeometry{margin=1in}
+		\center
+		
+		%	HEADING SECTIONS
+		\textsc{\LARGE Universidade de Brasília}\\[1.5cm] % Name of your university/college
+		\textsc{\Large Notas de Aula}\\[5cm] % Major heading such as course name
+		
+		%	TITLE SECTION
+		\HRule \\[0.4cm]
+		{\huge \bfseries Computação Básica / Algoritmos e Programação de Computadores}\\[0.4cm]
+		\HRule \\[6.5cm]
+		
+		%	AUTHOR SECTION
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushleft} \large
+				\emph{Autor:}\\
+				Guilherme \textsc{D. Branco} % Your name
+			\end{flushleft}
+		\end{minipage}
+		%	DATE SECTION
+		\vfill
+		{\large \today}\\[2cm]
+	\end{titlepage}
+	
+	%-----------------------------------------------------------------------------
+	%	CONTENT
+	%-----------------------------------------------------------------------------
+	% Default margins for the rest of the document
+	\restoregeometry
+	
+	% Index
+	\tableofcontents
+	
+	% Content
+	\mainmatter
+	\include{intro}
+	\nocite{*}
+	\appendix
+	\include{exercises}
+\end{document}
