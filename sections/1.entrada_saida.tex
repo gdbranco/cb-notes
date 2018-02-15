@@ -11,7 +11,13 @@ Existem conceitos que permeiam todas as linguagens, tais como:
 \end{itemize}
 Esta seção tem como objetivo situar o leitor sobre estes conceitos.
 \subsection{Constantes e Variáveis}
-Estes dois conceitos tem em comum a alocação de uma região de memória no computador para guardar dados, porém para as constantes esse dado não pode ser modificado após sua criação, já para variáveis pode-se mudá-lo quantas vezes forem necessárias. Em ambos os casos necessita-se também do tipo de dado a ser guardado pelo computador, isto varia de linguagem, porém os tipos padrões constiuem os seguintes:
+Estes dois conceitos tem em comum a alocação de uma região de memória no computador para guardar dados, como pode ser visto na Figura \ref{fig:memSimples}, porém para as constantes esse dado não pode ser modificado após sua criação, já para variáveis pode-se mudá-lo quantas vezes forem necessárias. Em ambos os casos necessita-se também do tipo de dado a ser guardado pelo computador, isto varia de linguagem, porém os tipos padrões constiuem os seguintes:
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=.5]{memSimples.pdf}
+    \caption{Alocação de memória}
+    \label{fig:memSimples}
+\end{figure}
 \begin{itemize}
     \item Númericos
     \begin{itemize}
@@ -45,7 +51,7 @@ Existem palavras reservadas que diferem de linguagem para linguagem, elas servem
 Servem para fazer os cálculos utilizados no programa, os operadores mais comuns são: +, - , / , *.\\ 
 Exemplo: $ a + b $
 \subsection{Expressões Lógicas}
-Fazer cálculos booleanos, que resultem em Verdadeiro ou Falso, os operadores mais comuns são: \&\& (E) e || (OU), existindo também os de maior que e menor que e outros. E seus reultados seguem a tabela verdade, como em \ref{tab:vE} e \ref{tab:vOU}.
+Fazer cálculos booleanos, que resultem em Verdadeiro ou Falso, os operadores mais comuns são: \&\& (E) e || (OU), existindo também os de maior que e menor que entre outros. E seus reultados seguem uma tabela verdade, como em \ref{tab:vE} e \ref{tab:vOU}.
 Exemplo: \\
 \begin{table}[!h]
 \centering
@@ -83,9 +89,8 @@ Mas vale lembrar que nas linguagens isto pode não estar desta forma, variando o
 \section{Algoritmos}
 Agora que sabemos alguns comandos de linguagens de programação podemos construir algoritmos simples, para tal devemos definir o que será o algoritmo: \\
 \begin{definicao}{Algoritmo}
-    Um algortimo constitui uma sequência de passos finita, com instruções bem definidas e não ambíguas.
+    Um algoritmo constitui uma sequência de passos finita, com instruções bem definidas e não ambíguas.
 \end{definicao}
-
 Vamos montar agora um problema para resolver a transformação de graus Celsius para Fahrenheit:
 \begin{equation}
     T_{F} = T_{C} * \frac{9}{5} + 32
