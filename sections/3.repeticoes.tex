@@ -3,7 +3,7 @@ Essas estruturas servem para, como o nome já implica, repetir um trecho do algo
 \section{Contadas}
 A repetição contada pode ser utilizada quando sabe-se a quantidade de vezes que o laço deverá ocorrer. Esta quantidade pode ser informada pelo usuário ao se atribuir o valor para uma variável. O comando mais comum para a repetição contada constitui o ``Para''\\
 \begin{lstlisting}
-    Para <variavel> = <valor_inicial> até <condicao> em passos de <incremento> faça
+    Para <variavel> = <valor_inicial> ate <condicao> em passos de <incremento> faca
         <comandos>
         .
         .
@@ -16,7 +16,7 @@ Exemplo: Determine a média aritmética de $n$ números.
     soma, nro: real
     Leia(n)
     Soma = 0
-    Para i=0 ate i<n em passos de i=i+1 faça
+    Para i=0 ate i<n em passos de i=i+1 faca
         Leia(nro)
         soma = soma + nro
     Fim-Para
@@ -27,7 +27,7 @@ Note que de $i = 0$ até $i < n$ existem $n$ repetições de 1 em 1. Por exemplo
 O teste no começo serve para checar se o bloco de código deve ser executado ou se deve ser pulado. Pode ser utilizado com a estrutura anterior (Para ... até ... em passos de ...), porém mais comumente utilizado com uma nova estrutura, o Enquanto: \\
 \begin{lstlisting}
     <variavel> = <valor_inicial>
-    Enquanto <condicao> faça
+    Enquanto <condicao> faca
         <incremento>
         <comandos>
     Fim-Enquanto
@@ -35,7 +35,7 @@ O teste no começo serve para checar se o bloco de código deve ser executado ou
 Note que nesta estrutura deve-se inicializar a variável fora do comando da repetição, assim como o incremento fica entre os comandos do bloco e não na repetição em si. Vamos montar o algoritmo para calcular $n!$ (fatorial). \\
 Ideia do algoritmo:
 \begin{lstlisting}
-    Decalaração de variaveis
+    Decalaracao de variaveis
     Leia(n)
     Calcula(n!)
     Mostra(n!)
@@ -44,7 +44,7 @@ Já se sabe como declarar, ler e mostrar valores, o calculo de n! se dará por r
 \begin{lstlisting}
     fat = 1
     i = 2
-    Enquanto (i <= n) faça
+    Enquanto (i <= n) faca
         fat = fat*i
         i = i+1
     FimEnquanto
@@ -67,7 +67,7 @@ Para garantir o funcionamento pode-se utilizar o teste de mesa na Tabela \ref{ta
 Esta última estrutura serve para checar se o bloco de código deve continuar a ser executado, portanto, sempre rodará pelo menos uma vez, já que o teste só aparece ao fim do bloco.
 \begin{lstlisting}
     <variavel> = <valor_inicial>
-    Faça
+    Faca
         <incremento>
         <comandos>
     Enquanto <condicao>
@@ -77,7 +77,7 @@ Da mesma forma que o anterior o incremento deve ser colocado junto aos comandos 
     valor: inteiro
     soma: inteiro
     soma = 0
-    Faça
+    Faca
         Escreva("Informe um numero")
         Leia(valor)
         soma = soma + valor
@@ -89,7 +89,7 @@ Para desconsiderar o valor negativo da soma deve-se subtrai-lo ao final da repet
     valor: inteiro
     soma: inteiro
     soma = 0
-    Faça
+    Faca
         Escreva("Informe um numero")
         Leia(valor)
         soma = soma + valor
@@ -102,7 +102,7 @@ ou
     valor: inteiro
     soma: inteiro
     soma = 0
-    Faça
+    Faca
         Escreva("Informe um numero")
         Leia(valor)
         Se (valor >= 0)
