@@ -3,34 +3,43 @@ Essas estruturas servem para, como o nome já implica, repetir um trecho do algo
 \section{Contadas}
 A repetição contada pode ser utilizada quando sabe-se a quantidade de vezes que o laço deverá ocorrer. Esta quantidade pode ser informada pelo usuário ao se atribuir o valor para uma variável. O comando mais comum para a repetição contada constitui o ``Para''\\
 \begin{lstlisting}
-    Para <variavel> = <valor_inicial> ate <condicao> em passos de <incremento> faca
-        <comandos>
-        .
-        .
-        .
-    Fim-Para
+Para <variavel> = <valor_inicial> ate <condicao> em passos de <incremento> faca
+    <comandos>
+    .
+    .
+    .
+Fim-Para
 \end{lstlisting}
-Exemplo: Determine a média aritmética de $n$ números.
+Para melhor entender o funcionamento da estrutura um pequeno exercício pode ser feito, deve-se determinar a média aritmética de $n$ números. \textbf{Exemplo:}
+\pagebreak
 \begin{lstlisting}
-    n, i: inteiro
-    soma, nro: real
-    Leia(n)
-    Soma = 0
-    Para i=0 ate i<n em passos de i=i+1 faca
-        Leia(nro)
-        soma = soma + nro
-    Fim-Para
-    Escreva(soma/n)
+n, i: inteiro
+soma, nro: real
+Leia(n)
+Soma = 0
+Para i=0 ate i<n em passos de i=i+1 faca
+    Leia(nro)
+    soma = soma + nro
+Fim-Para
+Escreva(soma/n)
 \end{lstlisting}
 Note que de $i = 0$ até $i < n$ existem $n$ repetições de 1 em 1. Por exemplo, de $0$ a $5$ passamos pelos números, $0$, $1$, $2$, $3$ e $4$, totalizando $5$ números.
 \section{Repetições com teste no começo}
-O teste no começo serve para checar se o bloco de código deve ser executado ou se deve ser pulado. Pode ser utilizado com a estrutura anterior (Para ... até ... em passos de ...), porém mais comumente utilizado com uma nova estrutura, o Enquanto: \\
+O teste no começo serve para checar se o bloco de código deve ser executado ou se deve ser pulado, como mostra a Figura \ref{fig:repeteComeco}. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.75]{repeteComeco.pdf}
+    \caption{Fluxograma repetição com teste no começo}
+    \label{fig:repeteComeco}
+\end{figure}
+Pode ser utilizado com a estrutura anterior (Para ... até ... em passos de ...), porém mais comumente utilizado com uma nova estrutura, o Enquanto: \\
+\textbf{Estrutura da repetição com teste no começo} \\
 \begin{lstlisting}
-    <variavel> = <valor_inicial>
-    Enquanto <condicao> faca
-        <incremento>
-        <comandos>
-    Fim-Enquanto
+<variavel> = <valor_inicial>
+Enquanto <condicao> faca
+    <incremento>
+    <comandos>
+Fim-Enquanto
 \end{lstlisting}
 Note que nesta estrutura deve-se inicializar a variável fora do comando da repetição, assim como o incremento fica entre os comandos do bloco e não na repetição em si. Vamos montar o algoritmo para calcular $n!$ (fatorial). \\
 Ideia do algoritmo:
@@ -64,7 +73,14 @@ Para garantir o funcionamento pode-se utilizar o teste de mesa na Tabela \ref{ta
     \end{tabular}
     \end{table}
 \section{Repetições com teste no fim}
-Esta última estrutura serve para checar se o bloco de código deve continuar a ser executado, portanto, sempre rodará pelo menos uma vez, já que o teste só aparece ao fim do bloco.
+Esta última estrutura serve para checar se o bloco de código deve continuar a ser executado, portanto, sempre rodará pelo menos uma vez, já que o teste só aparece ao fim do bloco, exemplificado pela Figura \ref{fig:repeteFim}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.75]{repeteFim.pdf}
+    \caption{Fluxograma repetição com teste no fim}
+    \label{fig:repeteFim}
+\end{figure}
+\textbf{Sua estrutura segue abaixo:}
 \begin{lstlisting}
     <variavel> = <valor_inicial>
     Faca
