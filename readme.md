@@ -12,7 +12,7 @@ O que ainda não esta pronto será adicionado aos poucos conforme o tempo do esc
     * Registros (typedef, struct, para python classes simples, dicionarios ou named tuples)
     * Arquivos
     * Recursividade
-    * Ponteiros - Basíco (sem estrutura de dados)
+    * Ponteiros - Básico (sem estrutura de dados)
 * Exercícios:
     * Introdução (variáveis, entrada e saída) - OK
     * Estruturas condicionais - OK 
@@ -24,7 +24,7 @@ O que ainda não esta pronto será adicionado aos poucos conforme o tempo do esc
     * Registros (typedef, struct, para python classes simples, dicionarios ou named tuples)
     * Arquivos
     * Recursividade
-    * Ponteiros - Basíco (sem estrutura de dados)
+    * Ponteiros - Básico (sem estrutura de dados)
 
 Alguns exercícios até repetição já estão escritos, previsão do conteúdo destes até o fim do carnaval.
 Bons estudos!
